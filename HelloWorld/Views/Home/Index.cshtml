@@ -1,0 +1,19 @@
+﻿
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    @for (int i = 0; i < 10; i++)
+    {
+        @if (i % 2 == 0)
+        {
+            <text>Número @i é Par</text>
+        }
+        else
+        {
+            <text>Número @i é ímpar</text> 
+        }
+        <br />
+    }
+</div>
